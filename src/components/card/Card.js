@@ -8,13 +8,13 @@ function Cardd(props) {
       <Card style={{ width: "18rem"}} className="shadow mb-5 mx-4">
         <Card.Img
           variant="top"
-          src="https://jubilantconsumer.com/wp-content/themes/jubilant/assets/img/product.png"
+          src={props.imgSource}
         />
         <Card.Body>
           <div className="mb-3 d-flex flex-row justify-content-between align-items-start">
             <div>
-              <div className="fs-4">Title of the product.</div>
-              <Card.Title>10,000</Card.Title>
+              <div className="fs-4">{props.title}</div>
+              <Card.Title>{props.price}</Card.Title>
             </div>
             <div className="pt-2">
               <svg
@@ -30,8 +30,8 @@ function Cardd(props) {
             </div>
           </div>
           <div className="fs-6 fw-light">
-            <div>DHA, PHASE 9, North Karachi</div>
-            <div>4 days ago</div>
+            <div>{props.location}</div>
+            <div>{props.time}</div>
           </div>
         </Card.Body>
         <div className="bg-warning text-dark text-center position-absolute top-0 start-50 translate-middle badge rounded-pill">featured</div>
@@ -42,13 +42,13 @@ function Cardd(props) {
       <Card style={{ width: "18rem"}} className="shadow mb-5 mx-4">
         <Card.Img
           variant="top"
-          src="https://jubilantconsumer.com/wp-content/themes/jubilant/assets/img/product.png"
+          src={props.imgSource}
         />
         <Card.Body>
           <div className="mb-3 d-flex flex-row justify-content-between align-items-start">
             <div>
-              <div className="fs-4">Title of the product.</div>
-              <Card.Title>10,000</Card.Title>
+              <div className="fs-4">{props.title}</div>
+              <Card.Title>{props.price}</Card.Title>
             </div>
             <div className="pt-2">
               <svg
@@ -64,8 +64,8 @@ function Cardd(props) {
             </div>
           </div>
           <div className="fs-6 fw-light">
-            <div>DHA, PHASE 9, North Karachi</div>
-            <div>4 days ago</div>
+            <div>{props.location}</div>
+            <div>{props.time}</div>
           </div>
         </Card.Body>
        </Card>
