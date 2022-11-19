@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Cardd from "./components/card/Card";
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import MyNav from "./components/MyNav/MyNav";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MyNav/>
+      <div className="d-flex flex-row justify-content-around flex-wrap">
+        <Cardd feature={true}/>
+        <Cardd feature={false}/>
+        <Cardd feature={false}/>
+        <Cardd feature={true}/>
+        <Cardd feature={false}/>
+        <Cardd feature={false}/>
+        <Cardd feature={true}/>
+        <Cardd feature={false}/>
+        <Cardd feature={false}/>
+        <Cardd feature={true}/>
+        <Cardd feature={false}/>
+      </div>
     </div>
   );
 }
